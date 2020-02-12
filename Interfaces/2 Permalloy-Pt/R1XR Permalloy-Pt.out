@@ -1,0 +1,47 @@
+.probe
+  .back_absorption = back_absorption R1XRR = 1
+  .background = background R1XRR = 0
+  .intensity = intensity R1XRR = 1.03718 in [0.95,1.05]
+  .sample_broadening = sample_broadening R1XRR = 0
+  .theta_offset = theta_offset R1XRR = 0
+.sample
+  .layers
+    [0]
+      .interface = Silicon interface = 19.7046 in [8.65,28.65]
+      .material
+        .irho = Silicon irho = 0.712165 in [-0.542,1.458]
+        .rho = Silicon rho = 20.2028 in [19.07,21.07]
+      .thickness = Silicon thickness = 0.000391183 in [0,100]
+    [1]
+      .interface = SiOx interface = 3.20439 in [0,13.224]
+      .material
+        .irho = SiOx irho = 6.79747 in [5.871,7.871]
+        .rho = SiOx rho = 33.8919 in [32.94,34.94]
+      .thickness = SiOx thickness = 38.3614 in [0,140.55]
+    [2]
+      .interface = Permalloy interface = 9.20143 in [0,16.751]
+      .material
+        .irho = Permalloy irho = -0.897828 in [-1,1]
+        .rho = Permalloy rho = 66.4868 in [65.49,67.49]
+      .thickness = Permalloy thickness = 107.397 in [8,208]
+    [3]
+      .interface = Interace interface = 5.1722 in [0,16.751]
+      .material
+        .irho = Interace irho = 3.86203 in [2.75,4.75]
+        .rho = Interace rho = 99.8258 in [99,101]
+      .thickness = Interace thickness = 0.738182 in [0,110]
+    [4]
+      .interface = Platinum interface = 3.66726 in [0,13.657]
+      .material
+        .irho = Platinum irho = 8.05345 in [6.451,8.451]
+        .rho = Platinum rho = 133.899 in [132.9,134.9]
+      .thickness = Platinum thickness = 49.3232 in [0,149.49]
+    [5]
+      .interface = Air interface = 0
+      .material
+        .irho = Air irho = 0.0114159 in [-1,1]
+        .rho = Air rho = 0.182386 in [-1,1]
+      .thickness = Air thickness = 4.34532e-07 in [0,100]
+  .thickness = stack thickness = 195.82
+
+[chisq=20.682(77), nllf=3608.99]
