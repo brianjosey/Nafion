@@ -1,0 +1,86 @@
+.probe
+  .Aguide = Aguide R1_Ar = 270
+  .H = H R1_Ar = 0
+  .mm
+    .back_absorption = back_absorption R1_Ar = 1
+    .background = background R1_Ar = 0
+    .intensity = intensity R1_Ar = 1.18133 in [0.01,3]
+    .sample_broadening = sample_broadening R1_Ar = 0.0365687 in [0,0.1]
+    .theta_offset = theta_offset R1_Ar = 0
+  .mp = None
+  .pm = None
+  .pp
+    .back_absorption = back_absorption R1_Ar = 1
+    .background = background R1_Ar = 0
+    .intensity = intensity R1_Ar = 1.18133 in [0.01,3]
+    .sample_broadening = sample_broadening R1_Ar = 0.0365687 in [0,0.1]
+    .theta_offset = theta_offset R1_Ar = 0
+.sample
+  .layers
+    [0]
+      .interface = Silicon interface = 36.1719 in [0,150]
+      .material
+        .irho = Silicon irho = 0
+        .rho = Silicon rho = 2.07
+      .thickness = Silicon thickness = 5000
+    [1]
+      .interface = SiOx interface = 3.559
+      .material
+        .irho = SiOx irho = 0
+        .rho = SiOx rho = 3.475
+      .thickness = SiOx thickness = 35.1
+    [2]
+      .interface = Permalloy interface = 8.522
+      .magnetism
+        .dead_above = Permalloy deadM above = 0
+        .dead_below = Permalloy deadM below = 0
+        .interface_above = None
+        .interface_below = None
+        .rhoM = Permalloy rhoM = 1.942
+        .thetaM = Permalloy thetaM = 270
+      .material
+        .irho = Permalloy irho = 0
+        .rho = Permalloy rho = 9.239
+      .thickness = Permalloy thickness = 108
+    [3]
+      .interface = Platinum interface = 0
+      .material
+        .irho = Platinum irho = 0
+        .rho = Platinum rho = 6.446
+      .thickness = Platinum thickness = 48.25
+    [4]
+      .above
+        .irho = Air irho = 0
+        .rho = Air rho = 0
+      .below
+        .irho = Platinum irho = 0
+        .rho = Platinum rho = 6.446
+      .interface = nuclear interface = 0
+      .irho
+        [0] = (x 0 * 3.3) = 0.933588
+        [1] = (x 1 * 3.3) = 0.685475
+        [2] = (x 2 * 3.3) = 0.000398221
+        [3] = (x 3 * 3.3) = 0.806158
+        [4] = (x 4 * 3.3) = 0.814859
+      .rho
+        [0] = (((1 - x 0) * ((y 0 * 8.024) + ((1 - y 0) * 2.265))) + (x 0 * 0.4)) = 3.32274
+        [1] = (((1 - x 1) * ((y 1 * 8.024) + ((1 - y 1) * 2.265))) + (x 1 * 0.4)) = 3.29263
+        [2] = (((1 - x 2) * ((y 2 * 8.024) + ((1 - y 2) * 2.265))) + (x 2 * 0.4)) = 4.25595
+        [3] = (((1 - x 3) * ((y 3 * 8.024) + ((1 - y 3) * 2.265))) + (x 3 * 0.4)) = 4.5634
+        [4] = (((1 - x 4) * ((y 4 * 8.024) + ((1 - y 4) * 2.265))) + (x 4 * 0.4)) = 4.56069
+      .thickness = nuclear thickness = 303.775 in [200,600]
+      .z
+        [0] = nuclear z[0] = 0.022128 in [0,1]
+        [1] = nuclear z[1] = 0.0188958 in [0,1]
+        [2] = nuclear z[2] = 0.397223 in [0,1]
+        [3] = nuclear z[3] = 0.882939 in [0,1]
+        [4] = nuclear z[4] = 0.883979 in [0,1]
+    [5]
+      .interface = Air interface = 0
+      .material
+        .irho = Air irho = 0
+        .rho = Air rho = 0
+      .thickness = Air thickness = 0
+  .thickness = stack thickness = 5495.13
+
+[chisq=8.438(32), nllf=2835.19]
