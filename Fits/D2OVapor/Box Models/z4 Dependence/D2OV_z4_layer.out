@@ -1,0 +1,71 @@
+.probe
+  .Aguide = Aguide R1_D2OVap = 270
+  .H = H R1_D2OVap = 0
+  .mm
+    .back_absorption = back_absorption R1_D2OVap = 1
+    .background = background R1_D2OVap = 1.88661e-08 in [0,1e-05]
+    .intensity = intensity R1_D2OVap = 0.97846 in [0.9,1.1]
+    .sample_broadening = sample_broadening R1_D2OVap = 0
+    .theta_offset = theta_offset R1_D2OVap = 0
+  .mp = None
+  .pm = None
+  .pp
+    .back_absorption = back_absorption R1_D2OVap = 1
+    .background = background R1_D2OVap = 2.69956e-07 in [0,1e-05]
+    .intensity = intensity R1_D2OVap = 0.965962 in [0.9,1.1]
+    .sample_broadening = sample_broadening R1_D2OVap = 0
+    .theta_offset = theta_offset R1_D2OVap = 0
+.sample
+  .layers
+    [0]
+      .interface = Silicon interface = 49.9719 in [30,50]
+      .material
+        .irho = Silicon irho = 0
+        .rho = Silicon rho = 3.15962 in [-inf,inf]
+      .thickness = Silicon thickness = 0
+    [1]
+      .interface = SiOx interface = 6.11721 in [0,20]
+      .material
+        .irho = SiOx irho = 0
+        .rho = SiOx rho = 1.02194 in [0.7,5]
+      .thickness = SiOx thickness = 59.9227 in [25,60]
+    [2]
+      .interface = Permalloy interface = 6.9957 in [0,20]
+      .magnetism
+        .dead_above = Permalloy deadM above = 0
+        .dead_below = Permalloy deadM below = 0
+        .interface_above = None
+        .interface_below = None
+        .rhoM = Permalloy rhoM = 1.86707 in [0.942,2.942]
+        .thetaM = Permalloy thetaM = 270
+      .material
+        .irho = Permalloy irho = 0
+        .rho = Permalloy rho = 9.07548 in [8.239,10.239]
+      .thickness = Permalloy thickness = 109.417 in [98,115]
+    [3]
+      .interface = (Platinum:Water(W/T) * (((Platinum thickness ** -4.0) + (Water thickness ** -4.0)) ** -0.25)) = 5.46954
+      .material
+        .irho = Platinum irho = 0
+        .rho = Platinum rho = 6.69199 in [5.446,7.446]
+      .thickness = Platinum thickness = 41.0096 in [30,70]
+    [4]
+      .interface = (Water:Nafion(W/T) * (((Water thickness ** -4.0) + (Nafion thickness ** -4.0)) ** -0.25)) = 0.000846164
+      .material
+        .irho = Water irho = 0
+        .rho = Water rho = 6.4
+      .thickness = Water thickness = 10
+    [5]
+      .interface = Nafion interface = 6.93837 in [0,20]
+      .material
+        .irho = Nafion irho = 0
+        .rho = Nafion rho = 4.32431 in [2.705,4.705]
+      .thickness = Nafion thickness = 322.451 in [200,400]
+    [6]
+      .interface = Air interface = 0
+      .material
+        .irho = Air irho = 0
+        .rho = Air rho = 0
+      .thickness = Air thickness = 0
+  .thickness = stack thickness = 542.8
+
+[chisq=5.114(37), nllf=1567.36]

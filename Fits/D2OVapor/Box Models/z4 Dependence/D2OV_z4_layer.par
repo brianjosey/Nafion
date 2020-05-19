@@ -1,0 +1,20 @@
+background R1_D2OVap 1.88661359010275e-08
+intensity R1_D2OVap 0.978459688813082
+background R1_D2OVap 2.69955852289099e-07
+intensity R1_D2OVap 0.965962049244068
+Silicon interface 49.9718989097522
+Silicon rho 3.15962336205553
+SiOx interface 6.11720700345284
+SiOx rho 1.02193510435656
+SiOx thickness 59.9227364474074
+Permalloy interface 6.99569884865699
+Permalloy rhoM 1.8670660881935
+Permalloy rho 9.07547978807708
+Permalloy thickness 109.4172320902
+Platinum rho 6.69198829859154
+Platinum thickness 41.009553783407
+Nafion interface 6.93836870372205
+Nafion rho 4.32431271605573
+Nafion thickness 322.45073221585
+Platinum:Water(W/T) 0.547436895667958
+Water:Nafion(W/T) 8.4616387593677e-05
