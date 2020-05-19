@@ -1,0 +1,19 @@
+background R1_Ar 2.58253932405077e-07
+intensity R1_Ar 0.983536144722902
+background R1_Ar 2.80710054176571e-07
+intensity R1_Ar 0.964990529598964
+Silicon interface 49.9999999312995
+SiOx interface 6.59926290347465
+SiOx rho 0.768765033025198
+SiOx thickness 44.9999493146223
+Permalloy interface 6.65394042365441
+Permalloy rhoM 1.88827368081525
+Permalloy rho 9.03411624848074
+Permalloy thickness 109.301498834158
+Platinum rho 6.51258491112575
+Platinum thickness 53.1072480478745
+Nafion interface 8.25691609477746
+Nafion rho 3.78720382720765
+Nafion thickness 271.480981425421
+Platinum:Water(W/T) 0.527303617606055
+Water:Nafion(W/T) 0.00118585232514741
