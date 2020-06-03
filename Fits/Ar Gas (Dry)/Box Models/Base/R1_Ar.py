@@ -76,6 +76,10 @@ s.add( slabs[6])
 probe.pp.intensity.range(0.9,1.1)
 probe.pp.intensity.value = 1.0
 
+probe.mm.intensity.range(0.9,1.1)
+probe.mm.intensity.value = 1.0
+
+
 # DISABLE CROSS-SECTIONS
 # probe.xs[1] = None # disables PM
 # probe.xs[2] = None # disables MP
