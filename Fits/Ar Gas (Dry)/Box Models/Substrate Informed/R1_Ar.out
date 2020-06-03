@@ -3,22 +3,22 @@
   .H = H R1_Ar = 0
   .mm
     .back_absorption = back_absorption R1_Ar = 1
-    .background = background R1_Ar = 0
-    .intensity = intensity R1_Ar = 1
+    .background = background R1_Ar = 1.98177e-07 in [0,1e-05]
+    .intensity = intensity R1_Ar = 0.947493 in [0.9,1.1]
     .sample_broadening = sample_broadening R1_Ar = 0
     .theta_offset = theta_offset R1_Ar = 0
   .mp = None
   .pm = None
   .pp
     .back_absorption = back_absorption R1_Ar = 1
-    .background = background R1_Ar = 0
-    .intensity = intensity R1_Ar = 0.942785 in [0.9,1.1]
+    .background = background R1_Ar = 1.13888e-09 in [0,1e-05]
+    .intensity = intensity R1_Ar = 0.936408 in [0.9,1.1]
     .sample_broadening = sample_broadening R1_Ar = 0
     .theta_offset = theta_offset R1_Ar = 0
 .sample
   .layers
     [0]
-      .interface = Silicon interface = 44.8392 in [25.49,45.49]
+      .interface = Silicon interface = 45.4835 in [25.49,45.49]
       .magnetism
         .dead_above = Silicon deadM above = 0
         .dead_below = Silicon deadM below = 0
@@ -28,10 +28,10 @@
         .thetaM = Silicon thetaM = 0
       .material
         .irho = Silicon irho = 0
-        .rho = Silicon rho = 2.14835 in [1.95,2.15]
+        .rho = Silicon rho = 2.071
       .thickness = Silicon thickness = 0
     [1]
-      .interface = SiOx interface = 2.95992 in [0,13.559]
+      .interface = SiOx interface = 3.24589 in [0,13.559]
       .magnetism
         .dead_above = SiOx deadM above = 0
         .dead_below = SiOx deadM below = 0
@@ -41,23 +41,23 @@
         .thetaM = SiOx thetaM = 0
       .material
         .irho = SiOx irho = 0
-        .rho = SiOx rho = 3.00031 in [3,8]
-      .thickness = SiOx thickness = 30.0395 in [30,45]
+        .rho = SiOx rho = 3.00003 in [3,8]
+      .thickness = SiOx thickness = 30.0041 in [30,45]
     [2]
-      .interface = Permalloy interface = 9.10458 in [0,18.522]
+      .interface = Permalloy interface = 9.36184 in [0,18.522]
       .magnetism
         .dead_above = Permalloy deadM above = 0
         .dead_below = Permalloy deadM below = 0
         .interface_above = None
         .interface_below = None
-        .rhoM = Permalloy rhoM = 1.97137 in [0.942,2.942]
+        .rhoM = Permalloy rhoM = 1.92341 in [0.942,2.942]
         .thetaM = Permalloy thetaM = 270
       .material
         .irho = Permalloy irho = 0
-        .rho = Permalloy rho = 9.42885 in [8.239,10.239]
-      .thickness = Permalloy thickness = 107.537 in [100,120]
+        .rho = Permalloy rho = 9.52385 in [8.239,10.239]
+      .thickness = Permalloy thickness = 107.268 in [100,120]
     [3]
-      .interface = Platinum interface = 0.263898 in [0,10]
+      .interface = Platinum interface = 0.0866005 in [0,10]
       .magnetism
         .dead_above = Platinum deadM above = 0
         .dead_below = Platinum deadM below = 0
@@ -67,10 +67,10 @@
         .thetaM = Platinum thetaM = 0
       .material
         .irho = Platinum irho = 0
-        .rho = Platinum rho = 6.34919 in [5.446,7.446]
-      .thickness = Platinum thickness = 50.2763 in [40,60]
+        .rho = Platinum rho = 6.40694 in [5.446,7.446]
+      .thickness = Platinum thickness = 50.7734 in [40,60]
     [4]
-      .interface = Water interface = 19.6351 in [0,50]
+      .interface = Water interface = 19.5441 in [0,50]
       .magnetism
         .dead_above = Water deadM above = 0
         .dead_below = Water deadM below = 0
@@ -80,10 +80,10 @@
         .thetaM = Water thetaM = 0
       .material
         .irho = Water irho = 0
-        .rho = Water rho = 2.98905 in [0.5,3]
-      .thickness = Water thickness = 65.9763 in [0,110]
+        .rho = Water rho = 2.9992 in [0.5,3]
+      .thickness = Water thickness = 65.2707 in [0,110]
     [5]
-      .interface = Nafion interface = 8.51813 in [0,17.702]
+      .interface = Nafion interface = 8.16724 in [0,17.702]
       .magnetism
         .dead_above = Nafion deadM above = 0
         .dead_below = Nafion deadM below = 0
@@ -93,8 +93,8 @@
         .thetaM = Nafion thetaM = 0
       .material
         .irho = Nafion irho = 0
-        .rho = Nafion rho = 4.11364 in [2.705,4.705]
-      .thickness = Nafion thickness = 219.381 in [186.6,386.6]
+        .rho = Nafion rho = 4.18059 in [2.705,4.705]
+      .thickness = Nafion thickness = 220.308 in [186.6,386.6]
     [6]
       .interface = Air interface = 0
       .magnetism
@@ -108,6 +108,6 @@
         .irho = Air irho = 0
         .rho = Air rho = 0
       .thickness = Air thickness = 0
-  .thickness = stack thickness = 473.21
+  .thickness = stack thickness = 473.624
 
-[chisq=6.672(32), nllf=2241.71]
+[chisq=6.134(35), nllf=2055.04]
