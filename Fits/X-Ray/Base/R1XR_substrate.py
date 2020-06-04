@@ -62,7 +62,7 @@ probe.intensity.range(0.95,1.05)
 
 ## LAYER RHOs
 sld0.rho.range(19.070, 21.070)
-sld1.rho.range(32.940, 34.940)
+sld1.rho.range(20.000, 40.000)
 sld2.rho.range(65.490, 67.490)
 sld3.rho.range(132.90, 134.90)
 sld4.rho.range(-1.0000, 1.0000)
