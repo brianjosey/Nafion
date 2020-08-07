@@ -1,0 +1,95 @@
+.probe
+  .Aguide = Aguide R1H92 = 270
+  .H = H R1H92 = 0
+  .mm
+    .back_absorption = back_absorption R1H92 = 1
+    .background = Background MM = 4.38676e-07 in [0,0.0001]
+    .intensity = intensity R1H92 = 0.993371 in [0.9,1.1]
+    .sample_broadening = sample_broadening R1H92 = 0
+    .theta_offset = theta_offset R1H92 = 0
+  .mp = None
+  .pm = None
+  .pp
+    .back_absorption = back_absorption R1H92 = 1
+    .background = Background PP = 1.49639e-07 in [0,0.0001]
+    .intensity = intensity R1H92 = 0.943878 in [0.9,1.1]
+    .sample_broadening = sample_broadening R1H92 = 0
+    .theta_offset = theta_offset R1H92 = 0
+.sample
+  .layers
+    [0]
+      .interface = Silicon interface = 22.2976 in [10,100]
+      .material
+        .irho = Silicon irho = 0
+        .rho = Silicon rho = 2.071
+      .thickness = Silicon thickness = 5000
+    [1]
+      .interface = SiOx interface = 3.40029 in [0,20]
+      .material
+        .irho = SiOx irho = 0
+        .rho = SiOx rho = 2.59408 in [0.7,5]
+      .thickness = SiOx thickness = 152.026 in [25,200]
+    [2]
+      .interface = Permalloy interface = 9.49933 in [0,20]
+      .magnetism
+        .dead_above = Permalloy deadM above = 0
+        .dead_below = Permalloy deadM below = 0
+        .interface_above = None
+        .interface_below = None
+        .rhoM = Permalloy rhoM = 1.66249 in [0.942,2.942]
+        .thetaM = Permalloy thetaM = 270
+      .material
+        .irho = Permalloy irho = 0
+        .rho = Permalloy rho = 8.84777 in [8.239,10.239]
+      .thickness = Permalloy thickness = 108.191 in [98,115]
+    [3]
+      .interface = Platinum interface = 1.25148e-05 in [0,10]
+      .material
+        .irho = Platinum irho = 0
+        .rho = Platinum rho = 6.52948 in [5.349,7.349]
+      .thickness = Platinum thickness = 48.0705 in [30,70]
+    [4]
+      .interface = (WRL1:NRL1 * (((WRL1 thickness ** -4.0) + (NRL1 thickness ** -4.0)) ** -0.25)) = 0.0121113
+      .material
+        .irho = WRL1 irho = 0
+        .rho = WRL1 rho = 3.42672 in [0,4.5]
+      .thickness = WRL1 thickness = 35.9973 in [4,40]
+    [5]
+      .interface = (NRL1:WRL2 * (((NRL1 thickness ** -4.0) + (WRL2 thickness ** -4.0)) ** -0.25)) = 3.50026
+      .material
+        .irho = NRL1 irho = 0
+        .rho = NRL1 rho = 1.88981 in [0,4.5]
+      .thickness = NRL1 thickness = 6.37988 in [4,40]
+    [6]
+      .interface = (WRL2:NRL2 * (((WRL2 thickness ** -4.0) + (NRL2 thickness ** -4.0)) ** -0.25)) = 0.112762
+      .material
+        .irho = WRL2 irho = 0
+        .rho = WRL2 rho = 3.21203 in [0,4.5]
+      .thickness = WRL2 thickness = 20.1994 in [4,40]
+    [7]
+      .interface = (NRL2:Grad * (((NRL2 thickness ** -4.0) + (Grad thickness ** -4.0)) ** -0.25)) = 13.5236
+      .material
+        .irho = NRL2 irho = 0
+        .rho = NRL2 rho = 3.00454 in [0,4.5]
+      .thickness = NRL2 thickness = 26.0053 in [4,40]
+    [8]
+      .interface = (Grad:Nafion * (((Grad thickness ** -4.0) + 6.25e-10) ** -0.25)) = 13.0967
+      .material
+        .irho = Gradient irho = 0
+        .rho = Gradient rho = 3.05588 in [0,4.5]
+      .thickness = Grad thickness = 36.7353 in [4,40]
+    [9]
+      .interface = Bulk Nafion interface = 12.5776 in [0,20]
+      .material
+        .irho = Bulk Nafion irho = 0
+        .rho = Bulk Nafion rho = 3.29131 in [2.705,4.705]
+      .thickness = Bulk Nafion thickness = 200.58 in [175,400]
+    [10]
+      .interface = Air interface = 0
+      .material
+        .irho = Air irho = 0
+        .rho = Air rho = 0
+      .thickness = Air thickness = 0
+  .thickness = stack thickness = 5634.19
+
+[chisq=4.942(56), nllf=1613.7]
