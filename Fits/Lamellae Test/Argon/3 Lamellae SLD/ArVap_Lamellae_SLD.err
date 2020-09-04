@@ -3,127 +3,137 @@
   .H = H R1_Ar = 0
   .mm
     .back_absorption = back_absorption R1_Ar = 1
-    .background = Background MM = 6.66932e-08 in [0,0.0001]
-    .intensity = intensity R1_Ar = 0.962537 in [0.9,1.1]
+    .background = Background MM = 4.09354e-08 in [0,0.0001]
+    .intensity = intensity R1_Ar = 0.960993 in [0.9,1.1]
     .sample_broadening = sample_broadening R1_Ar = 0
     .theta_offset = theta_offset R1_Ar = 0
   .mp = None
   .pm = None
   .pp
     .back_absorption = back_absorption R1_Ar = 1
-    .background = Background PP = 8.25006e-08 in [0,0.0001]
-    .intensity = intensity R1_Ar = 0.962369 in [0.9,1.1]
+    .background = Background PP = 7.29235e-08 in [0,0.0001]
+    .intensity = intensity R1_Ar = 0.960241 in [0.9,1.1]
     .sample_broadening = sample_broadening R1_Ar = 0
     .theta_offset = theta_offset R1_Ar = 0
 .sample
   .layers
     [0]
-      .interface = Silicon interface = 33.1779 in [10,100]
+      .interface = Silicon interface = 31.739 in [10,100]
       .material
         .irho = Silicon irho = 0
         .rho = Silicon rho = 2.071
       .thickness = Silicon thickness = 5000
     [1]
-      .interface = SiOx interface = 5.48283 in [0,20]
+      .interface = SiOx interface = 5.43721 in [0,20]
       .material
         .irho = SiOx irho = 0
-        .rho = SiOx rho = 1.09133 in [0.7,5]
-      .thickness = SiOx thickness = 87.3267 in [25,200]
+        .rho = SiOx rho = 1.11444 in [0.7,5]
+      .thickness = SiOx thickness = 88.6007 in [25,200]
     [2]
-      .interface = Permalloy interface = 7.4208 in [0,20]
+      .interface = Permalloy interface = 7.43816 in [0,20]
       .magnetism
         .dead_above = Permalloy deadM above = 0
         .dead_below = Permalloy deadM below = 0
         .interface_above = None
         .interface_below = None
-        .rhoM = Permalloy rhoM = 1.8836 in [0.942,2.942]
+        .rhoM = Permalloy rhoM = 1.88765 in [0.942,2.942]
         .thetaM = Permalloy thetaM = 270
       .material
         .irho = Permalloy irho = 0
-        .rho = Permalloy rho = 9.0237 in [8.239,10.239]
-      .thickness = Permalloy thickness = 108.881 in [98,115]
+        .rho = Permalloy rho = 9.03282 in [8.239,10.239]
+      .thickness = Permalloy thickness = 109.004 in [98,115]
     [3]
-      .interface = Platinum interface = 0.892021 in [0,10]
+      .interface = Platinum interface = 0.783084 in [0,10]
       .material
         .irho = Platinum irho = 0
-        .rho = Platinum rho = 6.48079 in [5.349,7.349]
-      .thickness = Platinum thickness = 51.3112 in [30,70]
+        .rho = Platinum rho = 6.48483 in [5.349,7.349]
+      .thickness = Platinum thickness = 51.1947 in [30,70]
     [4]
-      .interface = (WRL1:NRL1 * (((WRL1 thickness ** -4.0) + (NRL1 thickness ** -4.0)) ** -0.25)) = 0.704226
+      .interface = (WRL1:NRL1 * (((WRL1 thickness ** -4.0) + (NRL1 thickness ** -4.0)) ** -0.25)) = 0.591092
       .material
         .irho = WRL1 irho = 0
-        .rho = WRL1 rho = 2.42392 in [0,4.5]
-      .thickness = WRL1 thickness = 9.74976 in [2,40]
+        .rho = WRL1 rho = 2.44365 in [0,4.5]
+      .thickness = WRL1 thickness = 9.67303 in [2,40]
     [5]
-      .interface = (NRL1:WRL2 * (((NRL1 thickness ** -4.0) + (WRL2 thickness ** -4.0)) ** -0.25)) = 2.70415
+      .interface = (NRL1:WRL2 * (((NRL1 thickness ** -4.0) + (WRL2 thickness ** -4.0)) ** -0.25)) = 2.62076
       .material
         .irho = NRL1 irho = 0
-        .rho = NRL1 rho = 3.92302 in [0,4.5]
-      .thickness = NRL1 thickness = 19.3575 in [2,40]
+        .rho = NRL1 rho = 3.90753 in [0,4.5]
+      .thickness = NRL1 thickness = 19.9456 in [2,40]
     [6]
-      .interface = (WRL2:NRL2 * (((WRL2 thickness ** -4.0) + (NRL2 thickness ** -4.0)) ** -0.25)) = 3.34294
+      .interface = (WRL2:NRL2 * (((WRL2 thickness ** -4.0) + (NRL2 thickness ** -4.0)) ** -0.25)) = 3.22351
       .material
         .irho = WRL2 irho = 0
-        .rho = WRL2 rho = 3.04621 in [0,5.5]
-      .thickness = WRL2 thickness = 6.96243 in [2,40]
+        .rho = WRL2 rho = 3.05042 in [0,5.5]
+      .thickness = WRL2 thickness = 6.65492 in [2,40]
     [7]
-      .interface = (NRL2:Grad * (((NRL2 thickness ** -4.0) + (Grad thickness ** -4.0)) ** -0.25)) = 8.12551
+      .interface = (NRL2:Grad * (((NRL2 thickness ** -4.0) + (Grad thickness ** -4.0)) ** -0.25)) = 8.60024
       .material
         .irho = NRL2 irho = 0
-        .rho = NRL2 rho = 3.68711 in [0,4.5]
-      .thickness = NRL2 thickness = 22.202 in [2,40]
+        .rho = NRL2 rho = 3.70247 in [0,4.5]
+      .thickness = NRL2 thickness = 23.2187 in [2,40]
     [8]
-      .interface = (Grad:Nafion * (((Grad thickness ** -4.0) + 6.25e-10) ** -0.25)) = 44.6005
+      .interface = (Grad:Nafion * (((Grad thickness ** -4.0) + 6.25e-10) ** -0.25)) = 42.8994
       .material
         .irho = Gradient irho = 0
-        .rho = Gradient rho = 3.74947 in [0,4.5]
-      .thickness = Grad thickness = 96.4525 in [4,400]
+        .rho = Gradient rho = 3.72397 in [0,4.5]
+      .thickness = Grad thickness = 94.3046 in [4,400]
     [9]
-      .interface = Bulk Nafion interface = 9.71731 in [0,20]
+      .interface = Bulk Nafion interface = 9.80647 in [0,20]
       .material
         .irho = Bulk Nafion irho = 0
-        .rho = Bulk Nafion rho = 4.19555 in [2.705,4.705]
-      .thickness = Bulk Nafion thickness = 128.604 in [100,400]
+        .rho = Bulk Nafion rho = 4.19994 in [2.705,4.705]
+      .thickness = Bulk Nafion thickness = 129.514 in [100,400]
     [10]
       .interface = Air interface = 0
       .material
         .irho = Air irho = 0
         .rho = Air rho = 0
       .thickness = Air thickness = 0
-  .thickness = stack thickness = 5530.85
+  .thickness = stack thickness = 5532.11
 
-[chisq=2.200(55), nllf=723.775]
+[chisq=2.194(55), nllf=721.774]
               Parameter       mean  median    best [   68% interval] [   95% interval]
- 1        Background MM 0.50(27)e-6 0.000000465 0.000000067 [0.00000024 0.00000080] [0.00000006 0.00000104]
- 2      intensity R1_Ar  0.977(35)   0.973   0.963 [   0.94    1.01] [   0.91    1.05]
- 3        Background PP 0.49(26)e-6 0.000000467 0.000000083 [0.00000023 0.00000073] [0.00000007 0.00000106]
- 4      intensity R1_Ar  0.962(29)   0.961   0.962 [   0.93    0.99] [   0.91    1.02]
- 5    Silicon interface     58(21)   57.96   33.18 [   35.2    80.4] [   19.3    95.3]
- 6       SiOx interface    6.8(13)   6.746   5.483 [   5.59    8.05] [   4.38    9.37]
- 7             SiOx rho   1.45(42)   1.418   1.091 [   0.98    1.90] [   0.78    2.38]
- 8       SiOx thickness    105(38)   100.8    87.3 [     67     148] [     41     180]
- 9  Permalloy interface    7.6(33)    7.23    7.42 [    4.2    10.8] [    2.0    15.0]
-10       Permalloy rhoM   1.93(13)   1.937   1.884 [   1.80    2.06] [   1.67    2.19]
-11        Permalloy rho   9.13(20)   9.120   9.024 [   8.92    9.33] [   8.75    9.52]
-12  Permalloy thickness  108.2(23) 108.095 108.881 [ 105.97  110.52] [ 103.66  112.42]
-13   Platinum interface    4.3(22)   4.216   0.892 [   1.88    6.75] [   0.57    8.76]
-14         Platinum rho   6.45(25)   6.434   6.481 [   6.22    6.72] [   5.95    6.92]
-15   Platinum thickness   50.8(32)   50.74   51.31 [   47.6    54.0] [   44.4    56.9]
-16             WRL1 rho   2.66(83)   2.792   2.424 [   1.80    3.43] [   0.76    4.05]
-17       WRL1 thickness   13.9(76)   12.49    9.75 [    6.5    22.6] [    3.3    31.5]
-18             NRL1 rho   3.08(74)   3.248   3.923 [   2.36    3.74] [   1.21    4.18]
-19       NRL1 thickness   15.8(88)   14.44   19.36 [    6.2    26.0] [    3.1    34.7]
-20             WRL2 rho   3.43(62)   3.460   3.046 [   2.98    3.95] [   1.72    4.59]
-21       WRL2 thickness   16.2(88)   14.46    6.96 [    7.1    26.8] [    3.7    35.8]
-22             NRL2 rho   3.30(61)   3.372   3.687 [   2.83    3.82] [   1.70    4.27]
-23       NRL2 thickness   17.3(89)   16.23   22.20 [    7.9    27.6] [    2.9    35.0]
-24         Gradient rho   3.72(39)   3.766   3.749 [   3.53    4.00] [   2.64    4.22]
-25       Grad thickness     65(29)    63.1    96.5 [     35      95] [     10     125]
-26 Bulk Nafion interface    8.8(28)    8.90    9.72 [    6.1    11.6] [    2.6    14.0]
-27      Bulk Nafion rho   4.09(17)   4.080   4.196 [   3.93    4.26] [   3.74    4.43]
-28 Bulk Nafion thickness    157(28)   156.0   128.6 [    127     186] [    111     215]
-29            WRL1:NRL1   0.28(13)   0.282   0.073 [   0.13    0.41] [   0.05    0.50]
-30            NRL1:WRL2   0.27(13)   0.269   0.390 [   0.12    0.42] [   0.04    0.52]
-31            WRL2:NRL2   0.29(12)   0.298   0.481 [   0.16    0.42] [   0.05    0.52]
-32            NRL2:Grad   0.29(14)   0.290   0.366 [   0.13    0.44] [   0.04    0.52]
-33          Grad:Nafion   0.30(13)   0.310   0.469 [   0.15    0.43] [   0.05    0.52]
+ 1        Background MM 0.58(31)e-6 0.00000055 0.00000004 [0.0000003 0.0000009] [0.0000001 0.0000013]
+ 2      intensity R1_Ar  0.982(40)   0.982   0.961 [   0.94    1.02] [   0.91    1.06]
+ 3        Background PP 0.54(31)e-6 0.00000050 0.00000007 [0.0000002 0.0000008] [0.0000001 0.0000013]
+ 4      intensity R1_Ar  0.967(36)   0.965   0.960 [   0.93    1.01] [   0.91    1.04]
+ 5    Silicon interface     56(22)   55.57   31.74 [   31.8    81.8] [   18.3    94.2]
+ 6       SiOx interface    7.1(16)   6.976   5.437 [   5.44    8.71] [   4.26   10.52]
+ 7             SiOx rho   1.59(51)   1.483   1.114 [   1.10    2.13] [   0.84    2.67]
+ 8       SiOx thickness    103(42)   101.0    88.6 [     57     152] [     32     184]
+ 9  Permalloy interface    8.9(40)    8.65    7.44 [    4.8    13.1] [    1.9    17.3]
+10       Permalloy rhoM   1.93(17)   1.933   1.888 [   1.76    2.10] [   1.56    2.26]
+11        Permalloy rho   9.17(24)   9.165   9.033 [   8.93    9.40] [   8.75    9.70]
+12  Permalloy thickness  107.6(31)  107.78  109.00 [  104.6   111.0] [  101.1   113.3]
+13   Platinum interface    4.5(23)   4.306   0.783 [   1.96    7.03] [   0.66    9.08]
+14         Platinum rho   6.42(33)   6.420   6.485 [   6.10    6.77] [   5.76    7.03]
+15   Platinum thickness   50.8(41)   50.85   51.19 [   46.8    54.8] [   42.8    59.5]
+16             WRL1 rho   2.73(88)   2.871   2.444 [   1.89    3.55] [   0.58    4.15]
+17       WRL1 thickness   15.2(81)   13.36    9.67 [    7.4    24.0] [    3.5    34.0]
+18             NRL1 rho   3.14(71)   3.239   3.908 [   2.57    3.74] [   1.19    4.23]
+19       NRL1 thickness   16.6(88)   15.13   19.95 [    7.4    27.0] [    3.4    34.5]
+20             WRL2 rho   3.37(77)   3.429   3.050 [   2.76    4.04] [   1.38    4.88]
+21       WRL2 thickness   15.4(87)   13.58    6.65 [    6.6    25.2] [    3.0    34.0]
+22             NRL2 rho   3.34(59)   3.418   3.702 [   2.87    3.89] [   1.81    4.30]
+23       NRL2 thickness   18.1(92)   17.33   23.22 [    8.0    28.8] [    3.3    36.0]
+24         Gradient rho   3.71(39)   3.770   3.724 [   3.42    4.04] [   2.55    4.28]
+25       Grad thickness     57(28)    54.3    94.3 [     26      87] [      9     113]
+26 Bulk Nafion interface    9.3(33)    9.35    9.81 [    6.1    12.6] [    2.5    15.8]
+27      Bulk Nafion rho   4.08(22)   4.074   4.200 [   3.86    4.30] [   3.63    4.50]
+28 Bulk Nafion thickness    163(29)   161.9   129.5 [    131     195] [    111     223]
+29            WRL1:NRL1   0.28(13)   0.285   0.062 [   0.14    0.43] [   0.05    0.53]
+30            NRL1:WRL2   0.30(14)   0.301   0.395 [   0.14    0.45] [   0.03    0.52]
+31            WRL2:NRL2   0.30(13)   0.306   0.485 [   0.15    0.45] [   0.04    0.52]
+32            NRL2:Grad   0.28(14)   0.280   0.371 [   0.12    0.43] [   0.03    0.52]
+33          Grad:Nafion   0.30(13)   0.312   0.460 [   0.15    0.45] [   0.05    0.51]
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
