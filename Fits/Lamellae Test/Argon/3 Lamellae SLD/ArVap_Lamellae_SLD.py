@@ -146,7 +146,7 @@ WRL1_thickness.range(4,40)
 NRL1_thickness.range(4,40)
 WRL2_thickness.range(4,40)
 NRL2_thickness.range(4,40)
-grad_thickness.range(4,40)
+grad_thickness.range(4,400)
 
 
 sample[WRL1].material.rho.range(0.00, 4.5)
@@ -176,7 +176,7 @@ sample[Permalloy].magnetism.rhoM.range(0.94200, 2.9420)
 sample[SiOx].thickness.range(25, 200)
 sample[Permalloy].thickness.range(98, 115)
 sample[Platinum].thickness.range(30, 70)
-sample[Nafion].thickness.range(175, 400)
+sample[Nafion].thickness.range(75, 400)
 #sample[Air].thickness.range(0.0000, 100.00)
 
 # Layer Roughnesses
