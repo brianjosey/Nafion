@@ -1,0 +1,94 @@
+              Parameter       mean  median    best [   68% interval] [   95% interval]
+ 1        Background MM 3.1(24)e-6 0.00000265 0.00000000 [0.0000007 0.0000054] [0.0000001 0.0000085]
+ 2  intensity R1_D2OVap  0.988(55)   0.985   0.970 [   0.92    1.05] [   0.90    1.09]
+ 3        Background PP 3.5(26)e-6 0.0000029 0.0000002 [0.000001 0.000006] [0.000000 0.000010]
+ 4  intensity R1_D2OVap  0.990(56)   0.987   0.962 [   0.93    1.06] [   0.90    1.09]
+ 5    Silicon interface     58(26)   60.09   44.93 [   26.6    87.9] [   12.7    97.8]
+ 6       SiOx interface   12.0(53)   13.01    6.03 [    6.0    18.1] [    1.3    19.7]
+ 7             SiOx rho    3.1(11)   3.143   0.887 [   1.86    4.26] [   0.89    4.84]
+ 8       SiOx thickness    114(51)   114.0    79.6 [     53     173] [     30     196]
+ 9  Permalloy interface   10.5(56)   10.57    7.17 [    3.9    17.3] [    0.6    19.5]
+10       Permalloy rhoM   2.04(49)   2.051   1.909 [   1.52    2.60] [   1.10    2.88]
+11        Permalloy rho   8.97(49)   8.904   8.899 [   8.44    9.50] [   8.25   10.01]
+12  Permalloy thickness  106.4(46)  106.47  108.91 [  100.9   111.8] [   98.7   114.5]
+13   Platinum interface    5.6(29)   5.621   0.010 [   2.03    9.02] [   0.33    9.89]
+14         Platinum rho   6.25(54)   6.217   6.413 [   5.61    6.90] [   5.41    7.26]
+15   Platinum thickness     47(11)   45.99   51.12 [   35.6    60.4] [   30.7    68.0]
+16             WRL1 rho    4.0(16)   4.071   3.985 [   2.35    5.73] [   0.86    6.73]
+17       WRL1 thickness     23(12)   22.50   42.20 [    9.0    38.4] [    4.7    43.7]
+18             NRL1 rho    3.6(16)   3.689   4.538 [   2.01    5.36] [   0.53    6.49]
+19       NRL1 thickness     22(12)   20.05    5.31 [    9.0    36.9] [    4.6    43.4]
+20             WRL2 rho    3.7(17)   3.680   3.800 [   1.82    5.54] [   0.63    6.60]
+21       WRL2 thickness     23(13)   21.65    4.03 [    7.6    37.6] [    3.1    43.7]
+22             NRL2 rho    3.8(17)   3.866   4.277 [   1.98    5.63] [   0.34    6.67]
+23       NRL2 thickness     24(12)   24.18   25.60 [    9.9    38.9] [    5.0    44.0]
+24         Gradient rho    4.0(17)   4.214   4.309 [   2.20    5.62] [   0.31    6.52]
+25       Grad thickness 0.19(11)e3   189.5    33.4 [     60     319] [     11     391]
+26 Bulk Nafion interface   11.4(53)   11.98    7.60 [    5.6    17.4] [    1.1    19.7]
+27      Bulk Nafion rho   4.08(98)   3.903   4.479 [   3.05    5.15] [   2.79    6.46]
+28 Bulk Nafion thickness 0.17(11)e3   151.0   212.0 [     52     288] [     11     382]
+29            WRL1:NRL1   0.29(16)   0.308   0.001 [   0.09    0.46] [   0.01    0.54]
+30            NRL1:WRL2   0.29(16)   0.284   0.000 [   0.10    0.47] [   0.01    0.53]
+31            WRL2:NRL2   0.28(16)   0.285   0.006 [   0.10    0.47] [   0.01    0.54]
+32            NRL2:Grad   0.30(15)   0.318   0.550 [   0.12    0.48] [   0.03    0.54]
+33          Grad:Nafion   0.28(16)   0.282   0.313 [   0.09    0.46] [   0.01    0.54]
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: divide by zero encountered in true_divide
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:248: RuntimeWarning: invalid value encountered in multiply
+  maxlikelihood *= np.sum(height)/np.sum(maxlikelihood)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in greater_equal
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\numpy\core\fromnumeric.py:90: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+e:\program files (x86)\anaconda\lib\site-packages\bumps\dream\varplot.py:251: RuntimeWarning: invalid value encountered in greater
+  if ml_peak > hist_peak*1.3:
