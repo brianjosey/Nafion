@@ -1,129 +1,34 @@
-.probe
-  .Aguide = Aguide R1_D2OVap = 270
-  .H = H R1_D2OVap = 0
-  .mm
-    .back_absorption = back_absorption R1_D2OVap = 1
-    .background = Background MM = 4.19059e-08 in [0,0.0001]
-    .intensity = intensity R1_D2OVap = 0.965678 in [0.9,1.1]
-    .sample_broadening = sample_broadening R1_D2OVap = 0
-    .theta_offset = theta_offset R1_D2OVap = 0
-  .mp = None
-  .pm = None
-  .pp
-    .back_absorption = back_absorption R1_D2OVap = 1
-    .background = Background PP = 1.94604e-07 in [0,0.0001]
-    .intensity = intensity R1_D2OVap = 0.957835 in [0.9,1.1]
-    .sample_broadening = sample_broadening R1_D2OVap = 0
-    .theta_offset = theta_offset R1_D2OVap = 0
-.sample
-  .layers
-    [0]
-      .interface = Silicon interface = 42.7839 in [10,100]
-      .material
-        .irho = Silicon irho = 0
-        .rho = Silicon rho = 2.071
-      .thickness = Silicon thickness = 5000
-    [1]
-      .interface = SiOx interface = 5.89556 in [0,20]
-      .material
-        .irho = SiOx irho = 0
-        .rho = SiOx rho = 0.900033 in [0.7,5]
-      .thickness = SiOx thickness = 89.0955 in [25,200]
-    [2]
-      .interface = Permalloy interface = 7.17883 in [0,20]
-      .magnetism
-        .dead_above = Permalloy deadM above = 0
-        .dead_below = Permalloy deadM below = 0
-        .interface_above = None
-        .interface_below = None
-        .rhoM = Permalloy rhoM = 1.92624 in [0.942,2.942]
-        .thetaM = Permalloy thetaM = 270
-      .material
-        .irho = Permalloy irho = 0
-        .rho = Permalloy rho = 8.87909 in [8.239,10.239]
-      .thickness = Permalloy thickness = 108.795 in [98,115]
-    [3]
-      .interface = Platinum interface = 1.08969 in [0,10]
-      .material
-        .irho = Platinum irho = 0
-        .rho = Platinum rho = 6.40686 in [5.349,7.349]
-      .thickness = Platinum thickness = 51.8763 in [30,70]
-    [4]
-      .interface = (WRL1:NRL1 * (((WRL1 thickness ** -4.0) + (NRL1 thickness ** -4.0)) ** -0.25)) = 2.99602
-      .material
-        .irho = WRL1 irho = 0
-        .rho = WRL1 rho = 3.74318 in [0,7]
-      .thickness = WRL1 thickness = 10.5955 in [4,45]
-    [5]
-      .interface = (NRL1:WRL2 * (((NRL1 thickness ** -4.0) + (WRL2 thickness ** -4.0)) ** -0.25)) = 11.0735
-      .material
-        .irho = NRL1 irho = 0
-        .rho = NRL1 rho = 4.02875 in [0,7]
-      .thickness = NRL1 thickness = 30.1785 in [4,45]
-    [6]
-      .interface = (WRL2:NRL2 * (((WRL2 thickness ** -4.0) + (NRL2 thickness ** -4.0)) ** -0.25)) = 8.78775
-      .material
-        .irho = WRL2 irho = 0
-        .rho = WRL2 rho = 4.30628 in [0,7]
-      .thickness = WRL2 thickness = 28.5747 in [2,45]
-    [7]
-      .interface = (NRL2:Grad * (((NRL2 thickness ** -4.0) + (Grad thickness ** -4.0)) ** -0.25)) = 10.9997
-      .material
-        .irho = NRL2 irho = 0
-        .rho = NRL2 rho = 4.29009 in [0,7]
-      .thickness = NRL2 thickness = 27.6106 in [4,45]
-    [8]
-      .interface = (Grad:Nafion * (((Grad thickness ** -4.0) + 6.25e-10) ** -0.25)) = 48.7421
-      .material
-        .irho = Gradient irho = 0
-        .rho = Gradient rho = 4.43362 in [0,7]
-      .thickness = Grad thickness = 219.135 in [4,400]
-    [9]
-      .interface = Bulk Nafion interface = 9.24102 in [0,20]
-      .material
-        .irho = Bulk Nafion irho = 0
-        .rho = Bulk Nafion rho = 4.89257 in [2.705,7]
-      .thickness = Bulk Nafion thickness = 5.51006 in [4,400]
-    [10]
-      .interface = Air interface = 0
-      .material
-        .irho = Air irho = 0
-        .rho = Air rho = 0
-      .thickness = Air thickness = 0
-  .thickness = stack thickness = 5571.37
-
-[chisq=3.402(60), nllf=1022.26]
               Parameter       mean  median    best [   68% interval] [   95% interval]
- 1        Background MM  54(40)e-9 0.000000045 0.000000042 [0.00000002 0.00000009] [0.00000000 0.00000016]
- 2  intensity R1_D2OVap 0.9665(46)  0.9666  0.9657 [  0.962   0.970] [  0.957   0.976]
- 3        Background PP 222(68)e-9 0.000000217 0.000000195 [0.00000016 0.00000029] [0.00000010 0.00000037]
- 4  intensity R1_D2OVap 0.9583(46)  0.9580  0.9578 [  0.954   0.963] [  0.949   0.969]
- 5    Silicon interface   44.3(57)   43.26   42.78 [   40.0    47.9] [   36.3    62.0]
- 6       SiOx interface   6.07(18)   6.043   5.896 [   5.92    6.24] [   5.78    6.52]
- 7             SiOx rho  0.876(67)   0.883   0.900 [   0.81    0.94] [   0.72    1.00]
- 8       SiOx thickness   82.6(61)   83.50   89.10 [   78.4    87.6] [   66.3    91.2]
- 9  Permalloy interface   7.05(36)   7.039   7.179 [   6.73    7.38] [   6.38    7.79]
-10       Permalloy rhoM  1.922(14)  1.9221  1.9262 [  1.909   1.935] [  1.890   1.947]
-11        Permalloy rho  8.893(33)   8.892   8.879 [   8.86    8.92] [   8.82    8.96]
-12  Permalloy thickness 108.89(24) 108.908 108.795 [ 108.68  109.09] [ 108.37  109.33]
-13   Platinum interface    2.1(20)   1.416   1.090 [   0.60    3.66] [   0.16    8.27]
-14         Platinum rho  6.423(36)   6.427   6.407 [   6.39    6.45] [   6.34    6.48]
-15   Platinum thickness   48.4(56)   51.62   51.88 [   40.1    52.0] [   35.8    52.5]
-16             WRL1 rho    4.5(12)   3.795   3.743 [   3.67    6.45] [   3.46    6.64]
-17       WRL1 thickness   11.7(37)   11.74   10.60 [    8.3    14.3] [    4.6    19.4]
-18             NRL1 rho   4.03(34)   4.041   4.029 [   3.84    4.09] [   3.60    4.87]
-19       NRL1 thickness   21.6(77)   23.88   30.18 [   12.1    28.8] [    5.5    32.7]
-20             WRL2 rho   4.18(24)   4.230   4.306 [   4.10    4.28] [   3.71    4.43]
-21       WRL2 thickness   20.6(86)   20.97   28.57 [   11.0    29.4] [    3.7    37.5]
-22             NRL2 rho   4.21(12)   4.242   4.290 [   4.14    4.28] [   3.89    4.31]
-23       NRL2 thickness   28.7(89)   29.70   27.61 [   20.2    37.6] [    7.2    43.6]
-24         Gradient rho  4.394(73)   4.420   4.434 [   4.34    4.44] [   4.19    4.46]
-25       Grad thickness    196(61)   220.6   219.1 [    181     229] [     39     244]
-26 Bulk Nafion interface   8.70(61)   8.828   9.241 [   8.08    9.22] [   7.23    9.54]
-27      Bulk Nafion rho   4.75(16)   4.787   4.893 [   4.61    4.87] [   4.47    4.96]
-28 Bulk Nafion thickness     46(73)    10.4     5.5 [      5      82] [      4     228]
-29            WRL1:NRL1   0.25(13)   0.248   0.284 [   0.10    0.40] [   0.03    0.50]
-30            NRL1:WRL2   0.31(13)   0.320   0.449 [   0.17    0.45] [   0.05    0.53]
-31            WRL2:NRL2   0.30(13)   0.313   0.372 [   0.16    0.44] [   0.03    0.52]
-32            NRL2:Grad   0.35(12)   0.361   0.398 [   0.22    0.47] [   0.08    0.53]
-33          Grad:Nafion  0.309(83)   0.294   0.278 [   0.25    0.39] [   0.15    0.50]
+ 1        Background MM  18(15)e-9 0.0000000134 0.0000000025 [0.000000004 0.000000032] [0.000000001 0.000000058]
+ 2  intensity R1_D2OVap 0.9678(28)  0.9678  0.9679 [  0.965   0.971] [  0.963   0.973]
+ 3        Background PP 179(41)e-9 0.000000181 0.000000165 [0.00000014 0.00000022] [0.00000010 0.00000026]
+ 4  intensity R1_D2OVap 0.9593(26)  0.9594  0.9597 [  0.957   0.962] [  0.954   0.965]
+ 5    Silicon interface   42.3(20)  42.221  40.539 [  40.26   44.27] [  38.52   46.20]
+ 6       SiOx interface  5.942(91)   5.943   5.926 [   5.85    6.03] [   5.76    6.12]
+ 7             SiOx rho  0.924(37)   0.924   0.926 [   0.89    0.96] [   0.85    1.00]
+ 8       SiOx thickness   85.7(25)  85.699  86.264 [  83.25   88.19] [  80.96   90.87]
+ 9  Permalloy interface   7.09(20)   7.087   7.073 [   6.89    7.29] [   6.69    7.47]
+10       Permalloy rhoM 1.9215(88)  1.9217  1.9193 [  1.913   1.930] [  1.905   1.938]
+11        Permalloy rho  8.889(18)  8.8892  8.8845 [  8.871   8.908] [  8.856   8.927]
+12  Permalloy thickness 108.88(13) 108.879 108.910 [ 108.75  109.01] [ 108.62  109.15]
+13   Platinum interface   0.87(56)   0.788   1.396 [   0.28    1.44] [   0.05    2.16]
+14         Platinum rho  6.418(18)  6.4180  6.4186 [  6.400   6.436] [  6.379   6.452]
+15   Platinum thickness  51.80(29)  51.788  52.022 [  51.53   52.09] [  51.24   52.39]
+16             WRL1 rho   3.73(12)   3.742   3.657 [   3.62    3.83] [   3.47    3.90]
+17       WRL1 thickness   11.9(32)   11.69   10.91 [    8.9    14.7] [    6.2    18.6]
+18             NRL1 rho  4.042(53)   4.049   4.061 [   4.01    4.08] [   3.92    4.11]
+19       NRL1 thickness   26.5(48)   27.27   29.36 [   22.9    30.5] [   11.6    33.5]
+20             WRL2 rho  4.248(47)   4.254   4.279 [   4.22    4.29] [   4.10    4.32]
+21       WRL2 thickness   26.3(95)   25.90   28.06 [   16.4    37.2] [    8.6    44.3]
+22             NRL2 rho  4.275(37)   4.271   4.257 [   4.24    4.31] [   4.21    4.36]
+23       NRL2 thickness   31.9(80)   32.14   28.05 [   23.6    41.0] [   16.0    44.6]
+24         Gradient rho  4.427(12)  4.4270  4.4246 [  4.415   4.438] [  4.404   4.449]
+25       Grad thickness  219.8(69)  220.69  220.73 [  212.6   226.3] [  204.8   231.8]
+26 Bulk Nafion interface   9.37(25)   9.381   9.445 [   9.11    9.63] [   8.88    9.85]
+27      Bulk Nafion rho  4.972(81)   4.968   4.996 [   4.89    5.05] [   4.84    5.15]
+28 Bulk Nafion thickness    5.2(15)   4.719   4.107 [   4.17    6.09] [   4.02    8.88]
+29            WRL1:NRL1   0.28(15)   0.271   0.322 [   0.11    0.45] [   0.02    0.53]
+30            NRL1:WRL2   0.28(15)   0.279   0.001 [   0.11    0.45] [   0.02    0.53]
+31            WRL2:NRL2   0.27(15)   0.259   0.041 [   0.10    0.44] [   0.02    0.53]
+32            NRL2:Grad   0.34(12)   0.338   0.549 [   0.21    0.48] [   0.07    0.54]
+33          Grad:Nafion  0.235(26)   0.233   0.224 [   0.21    0.26] [   0.19    0.29]
